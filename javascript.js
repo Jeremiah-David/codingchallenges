@@ -57,3 +57,58 @@ function upArray(arr){
   //     arr.insert(0,1)
           
   // return arr
+
+
+  //////////////
+//   Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+// It should remove all values from list a, which are present in list b keeping their order.
+
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+
+// arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+function arrayDiff(a, b) {
+  newArray = []
+  for (i =0; i < a.length; i++) {
+      if (!b.includes(a[i])) {
+    newArray.push(a[i])
+  }
+  }
+  return newArray
+}
+
+// Now in Python! 
+
+// def array_diff(a, b):
+//     newArray = []
+//     for i in range(len((a))):
+//         if a[i] not in b:
+//             newArray.append(a[i])
+        
+//     return newArray
+
+
+
+// /////////////////////////////////////////
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+// It should remove all values from list a, which are present in list b keeping their order.
+
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+
+// arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+
+
+function arrayDiff(a, b) {
+  newArray = []
+  for (i =0; i < a.length; i++) {
+      if (!b.includes(a[i])) {
+    newArray.push(a[i])
+  }
+  }
+  return newArray
+}
