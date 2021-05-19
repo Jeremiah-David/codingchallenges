@@ -234,3 +234,63 @@ var moveZeros = function (arr) {
   answer = start.concat(end)
   return answer
 }
+
+// Fans of The Wire will appreciate this one. For those that haven't seen the show, the Barksdale Organization has a simple method for encoding telephone numbers exchanged via pagers: "Jump to the other side of the 5 on the keypad, and swap 5's and 0's."
+
+// Here's a keypad for visualization.
+
+function decode(string) {
+  
+  let newStr = []
+  let answer = ""
+ 
+
+  for (i=0; i < string.length; i++) {
+    
+  switch(string[i]) {
+   case '1':
+    
+    newStr.push(9)
+    break;
+       case '2':
+ 
+      newStr.push(8)
+    break;
+         case '3':
+  
+      newStr.push(7)
+    break;
+         case '4':
+    
+    newStr.push(6)
+    break;
+         case '5':
+       
+    newStr.push(0)
+    break;
+         case '6':
+      
+    newStr.push(4)
+    break;
+         case '7':
+ 
+    newStr.push(3)
+    break;
+         case '8':
+
+    newStr.push(2)
+    break;
+               case '9':
+
+    newStr.push(1)
+    break;
+                case '0':
+
+    newStr.push(5)
+    break;
+
+   
+}
+  }
+        return newStr.join("")
+}
